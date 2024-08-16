@@ -65,7 +65,6 @@ section {
 .content-section.visible {
     display: block;
     opacity: 1;
-    text-align: center;
 }
 
 h2 {
