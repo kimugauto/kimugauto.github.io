@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñadora Gráfica y Fotógrafa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ximena Gauto - Fotografa y Diseñadora Gráfica</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi" class="nav-link" data-target="sobre-mi">Sobre mí</a></li>
+                <li><a href="#disenos" class="nav-link" data-target="disenos">Diseños</a></li>
+                <li><a href="#fotos" class="nav-link" data-target="fotos">Fotos</a></li>
+                <li><a href="#contacto" class="nav-link" data-target="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi" class="content-section">
+        <h2>Sobre mí</h2>
+        <p>Soy una diseñadora gráfica apasionada por el arte visual y la creación de experiencias visuales únicas. Con años de experiencia en el diseño gráfico y la fotografía, me dedico a transformar ideas en imágenes impactantes y significativas. Mi trabajo abarca desde branding y diseño editorial hasta la captura de momentos inolvidables a través de la lente.</p>
+    </section>
+
+    <section id="disenos" class="content-section">
+        <h2>Diseños</h2>
+        <div class="design-gallery">
+            <img src="design1.jpg" alt="Diseño 1">
+            <img src="design2.jpg" alt="Diseño 2">
+            <img src="design3.jpg" alt="Diseño 3">
+        </div>
+    </section>
+
+    <section id="fotos" class="content-section visible">
+        <h2>Fotos</h2>
+        <div class="photo-gallery">
+            <img id="current-photo" src="photo1.jpg" alt="Foto 1">
+            <div class="photo-controls">
+                <button id="prev-photo">Anterior</button>
+                <button id="next-photo">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="content-section">
+        <h2>Contacto</h2>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/[NumeroTelefono]" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:[correo@ejemplo.com]">
+                <img src="email-icon.png" alt="E-mail">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Ximena Gauto]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
