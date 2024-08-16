@@ -1,0 +1,150 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Gris claro para el fondo */
+    color: #333333; /* Gris oscuro para el texto */
+}
+
+header {
+    background-color: #1a1a1a; /* Negro suave para el fondo del header */
+    color: #ffffff; /* Blanco para el texto del header */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco para los enlaces del menú */
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000; /* Negro para el enlace iluminado */
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+    background-color: #e0e0e0; /* Gris claro para el fondo del enlace iluminado */
+    color: #000000; /* Negro para el texto del enlace iluminado */
+}
+
+nav ul li a:not(:hover) {
+    opacity: 0.5; /* Reducir opacidad de enlaces no iluminados */
+}
+
+section {
+    padding: 2rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-section.visible {
+    display: block;
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    border-bottom: 2px solid #1a1a1a; /* Negro suave para el borde */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #1a1a1a; /* Negro suave para el fondo del footer */
+    color: #ffffff; /* Blanco para el texto del footer */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Diseño de la galería de diseños */
+.design-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.design-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333333; /* Gris oscuro para el borde de las imágenes */
+}
+
+/* Galería de fotos */
+.photo-gallery {
+    text-align: center;
+}
+
+.photo-gallery img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #333333; /* Gris oscuro para el borde de la foto */
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-controls button {
+    background-color: #333333; /* Gris oscuro para los botones */
+    color: #ffffff; /* Blanco para el texto de los botones */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.photo-controls button:hover {
+    background-color: #666666; /* Gris medio para el hover de los botones */
+    color: #ffffff;
+}
+
+/* Sección de contacto */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.2);
+}
